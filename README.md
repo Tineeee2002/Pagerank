@@ -4,7 +4,7 @@ This repository contains a Python-based implementation of the PageRank algorithm
 
 ## Features
 - Implement PageRank and Personalized PageRank step-by-step from scratch with explain and visualization
-- Use as a recommendation system with several beside on some graph data
+- Use as a recommendation system with several other methods on some graph data
 ## Getting Started
 
 ### Prerequisites
@@ -24,9 +24,9 @@ pip install numpy matplotlib networkx
 
 ## How It Works
 The PageRank algorithm assigns a ranking to each node in a graph based on the structure of incoming and outgoing edges. It is defined as:
-
+```
 \[ PR(v) = (1 - d) + d \sum_{u \in B(v)} \frac{PR(u)}{L(u)} \]
-
+```
 Where:
 - **PR(v):** PageRank value for node \(v\)
 - **d:** Damping factor (typically set to 0.85)
