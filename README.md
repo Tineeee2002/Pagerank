@@ -23,10 +23,12 @@ pip install numpy matplotlib networkx
 2. Follow the instructions in the notebook to compute PageRank values for a sample graph or your own custom graph.
 
 ## How It Works
-The PageRank algorithm assigns a ranking to each node in a graph based on the structure of incoming and outgoing edges. It is defined as:
-```
-\[ PR(v) = (1 - d) + d \sum_{u \in B(v)} \frac{PR(u)}{L(u)} \]
-```
+The PageRank algorithm assigns a ranking to each node in a graph based on the structure of incoming and outgoing edges. It is defined as:  
+
+![PageRank](https://upload.wikimedia.org/wikipedia/commons/f/fb/PageRanks-Example.svg)  
+
+$PR(v) = (1 - d) + d \sum_{u \in B(v)} \frac{PR(u)}{L(u)}$
+
 Where:
 - **PR(v):** PageRank value for node \(v\)
 - **d:** Damping factor (typically set to 0.85)
